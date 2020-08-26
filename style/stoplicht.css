@@ -1,0 +1,89 @@
+.rechts {
+    text-align: right
+}
+#stoplicht4 {
+    margin-left:auto;
+    margin-right:0px;
+}
+.stoplicht, .stoplicht td,tr {
+    border-collapse:collapse;
+    border: 1px solid black;
+}
+.straat {
+    width: 100px;
+    height:100px;
+    background-color: lightblue;
+}
+.straatnaam {
+    background-color:darkblue;
+    color:white;
+}
+#straatnaamKolom {
+    width:1px;
+}
+#straatnaam1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+} 
+.stoplicht td {
+    
+    width:25px;
+    height:25px;
+    text-align:center;
+    margin : auto;
+}
+
+.stoplichtLamp {
+    background:black;
+    width:20px;
+    height:20px;
+    margin:auto;
+    border-radius: 50%;
+}
+
+button.rood:hover
+{
+    background:red;
+}
+
+button.groen:hover
+{
+    background:green;
+}
+
+button.oranje:hover
+{
+    background:orange;
+}
+
+.hidden {
+    display:none;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#links {
+    margin-left:20px;
+    margin-right:20px;
+    width: 35%;
+
+}
+table {
+    margin : 0 auto;
+}
+#rechts {
+    width:65%;
+}
+.opdracht {
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.opdracht p {
+    margin:10px 0;
+}
+
+.antwoord {
+    width: 100px;
+}

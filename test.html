@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <style>
+            #picture0, #picture1, #picture2 {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+<button onclick="start()">start</button>
+        <img id="picture0" src = "img/kv-NAO.png">
+        <img id="picture1" src = "img/amstelland.jpg">
+        <img id="picture2" src = "img/appdev.jpg">
+        <canvas id="myCanvas0" Onclick= "Schuif(event)" width="512" height="512" style="border:1px solid #000000;">
+      </canvas>
+        <canvas id="myCanvas1" Onclick= "Schuif(event)" width="512" height="512" style="border:1px solid #000000;">
+      </canvas>
+        <canvas id="myCanvas2" Onclick= "Schuif(event)" width="512" height="512" style="border:1px solid #000000;">
+      </canvas>
+
+<script>
+    function start() {
+    for (var i=0;i<3;i++) {
+  var c = document.getElementById("myCanvas" +i);
+  var ctx = c.getContext("2d");
+  var img = document.getElementById("picture" +i); 
+  ctx.drawImage(img, 10, 10);
+}
+
+    }
+</script>
+    </body>
+</html>

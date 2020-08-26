@@ -1,0 +1,64 @@
+#rekenen1, #rekenen1 tr,#rekenen1 td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table, tr, td {
+     border-collapse: collapse;
+}
+#rekenen1 td {
+    width: 60px;
+    height: 60px;
+    text-align:center;
+    font-size:3em;
+    padding: 0px 0px 0px 0px;
+}
+#rekenen1 input {
+    width:60px;
+    height:60px;
+    font-size:1em;
+}
+.img {
+    width: 50px;
+    height:50px;
+}
+
+#rekenen2 td {
+	width: 50px;
+	height: 50px;
+}
+.r1k1, .r2k1, .r2k2, .r2k4, .r3k1, .r3k2, .r3k3, 
+.r3k4, .r3k5, .r4k2, .r4k3, .r4k5, .r5k3 {
+	border-left: 1px solid black;
+}
+.r1k1, .r1k2, .r1k3, .r2k2, .r2k3, .r2k4, .r3k3, .r3k4, .r3k5 {
+	border-top: 1px solid black;
+}
+.r1k3, .r2k4, .r3k5, .r4k5, .r5k5 {
+	border-right: 1px solid black;
+}
+.r3k1, .r3k2, .r3k3,.r4k2, .r4k3, .r4k4, .r5k3, .r5k4, .r5k5 {
+	border-bottom: 1px solid black;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#links {
+    margin-left:20px;
+    margin-right:20px;
+    width: 50%;
+    display:none;
+}
+table {
+    margin : 0 auto;
+}
+#rechts {
+    width:50%;
+    display: none;
+}
+
+#links2, #links3 {
+    display:none;
+}

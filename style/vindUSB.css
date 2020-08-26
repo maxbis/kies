@@ -1,0 +1,19 @@
+#container {
+    flex-direction: row;
+    display:flex;
+}
+#links, #rechts {
+    width:50%;
+}
+
+#tableDiv {
+    text-align: center;
+    margin-left:25%;
+    
+}
+#Ngraden, #Egraden, #Nmin, #Emin {
+    width:50px;
+}
+#Nsec, #Esec {
+    width:75px;
+}

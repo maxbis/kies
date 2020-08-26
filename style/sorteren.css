@@ -1,0 +1,32 @@
+
+table div {
+    width: 60px;
+    height: 80px;
+    border-width: 1px;
+    border-color:black;
+    border-style:solid;
+    text-align:center;
+}
+td {
+   padding:5px;
+}
+.kaart {
+}
+
+#container img  {
+    width:25%;
+    height:25%;
+    margin: auto 0px;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    text-align:center;
+}
+#links {
+    margin-left:20px;
+    margin-right:20px;
+}
+#opdracht1, #opdracht2, #opdracht3, #opdracht4{
+    display:none;
+}

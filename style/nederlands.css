@@ -1,0 +1,23 @@
+
+#container {
+    display: flex;
+    flex-direction: row;
+}
+#links {
+    margin-left:20px;
+    margin-right:20px;
+    width: 50%;
+
+}
+#extra, #opgeven {
+    display:none;
+}
+table {
+    margin : 0 auto;
+}
+#rechts {
+    width:50%;
+}
+.rood {
+    color:red;
+}

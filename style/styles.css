@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,700,900');
+
+/* CSS Document */
+
+* 
+{
+  box-sizing: border-box;
+}
+
+html, body
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 14px;
+	background-color:#f0f0f0;
+	margin:0;
+	padding:0;
+	height:100%;
+	color:#424242;
+}
+
+.content
+{
+	max-width: 1200px;
+	margin:0 auto;
+	padding:0;
+	height:100%;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-top:30px;
+    position:relative;
+}
+
+li a
+{
+	text-decoration:none;
+	color:#424242;
+}
+
+a:hover
+{
+	font-weight:bold;
+}
+
+a.active
+{
+	text-decoration:none;
+	font-weight:bold;
+}
+#containerStart
+{
+    display: flex;
+    flex-direction: column;
+    margin-top:30px;
+	text-align:center;
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+main
+{
+	display:block;
+	width:100%;
+	background:#ffffff;
+	padding:30px 20px;
+	margin-top:10px;
+	padding:50px 100px;
+}
+#leegBlok {
+	display:block;
+	height:100px;
+}
+header
+{
+	margin:0;
+	padding:12px 10px;
+	display:block;
+	height:50px;
+	background-color:#c22126; /*#c00a2b;*/
+	color:#ffffff;
+	font-weight:normal;
+	font-size:16px;
+	position:relative;
+}
+
+header form
+{
+	width:50px;
+	height:20px;
+}
+
+header ul 
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color:#ffffff;
+  padding:0;
+  margin:0;
+}
+
+header li
+{
+	list-style:none;
+	padding:0 10px;
+}
+
+header ul a  
+{
+  color:#ffffff;
+}
+
+.logo
+{
+	width:180px;
+	height:140px;
+	display:block;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+p
+{
+    padding:0;
+    margin:0;
+}
+
+p.dagcode
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#ffffff;
+	background-color:#c22126;
+	padding:10px 5px;
+}
+
+h1, h2
+{
+	margin-top:0;
+	padding:0;
+}
+
+h3
+{
+	margin:10px 0;
+	padding:0;
+}
+
+table
+{
+	border-collapse:collapse;
+}
+
+table.tabel-overzicht
+{
+	text-align:left;
+}
+
+table.tabel-overzicht th
+{
+	text-align:left;
+	color:#ffffff;
+	background-color:#c22126; /*#c00a2b;*/
+	padding-left:2px;
+}
+
+main canvas
+{
+	max-width:450px;
+}
+
+main ul
+{
+ list-style:none;
+ margin:0;
+ padding:0;
+ padding-left:1.2em;
+ position:relative;
+}
+
+main li
+{
+	margin:5px 0;
+ 	padding:0;
+}
+
+main li:before
+{
+	content:"»";
+	color:#c22126;
+	position:absolute;
+	left:0;
+}
+
+.left
+{
+    float:left;
+}
+
+.right
+{
+    float:right;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.error
+{
+    color:#424242;
+    font-weight:bold;
+    padding:5px 0;
+}
+
+.message
+{
+    color:#c22126;
+    font-weight:bold;
+}
+
+.goed
+{
+    color:green;
+    font-weight:bold;
+}
+
+.buttonRow
+{
+    margin:10px 0;
+    display:flex;
+}
+
+.buttonRow button
+{
+    margin-right:10px;
+}
+
+nav
+{
+	color:#ffffff;
+	padding: 0 10px 0 200px;
+	position:relative;
+	text-align: right;
+}
+
+nav input[type=submit]
+{
+	background-color:transparent;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family: 'Roboto Slab', serif;
+	font-size:16px;
+	padding:0px 0px;
+	text-decoration:none;
+	border:none;
+}
+
+.form-inlog input[type=button], 
+.form-inlog input[type=submit], 
+.form-inlog input[type=reset], 
+.form-inlog button,
+main button,
+.form-style input[type=button], 
+.form-style input[type=submit], 
+.form-style input[type=reset], 
+.form-style button
+{
+-moz-box-shadow:inset 0px 1px 6px 0px #cf866c;
+	-webkit-box-shadow:inset 0px 1px 6px 0px #cf866c;
+	box-shadow:inset 0px 1px 6px 0px #cf866c;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #d44247), color-stop(1, #c22126));
+	background:-moz-linear-gradient(top, #d44247 5%, #c22126 100%);
+	background:-webkit-linear-gradient(top, #d44247 5%, #c22126 100%);
+	background:-o-linear-gradient(top, #d44247 5%, #c22126 100%);
+	background:-ms-linear-gradient(top, #d44247 5%, #c22126 100%);
+	background:linear-gradient(to bottom, #d44247 5%, #c22126 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#d44247', endColorstr='#c22126',GradientType=0);
+	background-color:#d44247;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #c2272c;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:14px;
+	font-weight:bold;
+	padding:5px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #854629;
+	font-family: 'Nunito', serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.form-style input[type=button], 
+.form-style input[type=submit], 
+.form-style input[type=reset], 
+.form-style button
+{
+font-size:12px;	
+padding:5px;
+margin-left:10px;
+}
+
+.form-inlog input[type=button]:hover , 
+.form-inlog input[type=submit]:hover , 
+.form-inlog input[type=reset]:hover , 
+.form-inlog button:hover, 
+.form-style input[type=button]:hover , 
+.form-style input[type=submit]:hover , 
+.form-style input[type=reset]:hover , 
+.form-style button:hover, 
+main button:hover
+{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #c22126), color-stop(1, #d44247));
+	background:-moz-linear-gradient(top, #c22126 5%, #d44247 100%);
+	background:-webkit-linear-gradient(top, #c22126 5%, #d44247 100%);
+	background:-o-linear-gradient(top, #c22126 5%, #d44247 100%);
+	background:-ms-linear-gradient(top, #c22126 5%, #d44247 100%);
+	background:linear-gradient(to bottom, #c22126 5%, #d44247 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c22126', endColorstr='#d44247',GradientType=0);
+	background-color:#c22126;
+}
+
+.form-inlog{
+	display:block;
+	max-width: 500px;
+	width: 100%;
+	margin: 10px auto;
+	padding: 20px;
+	background: #424242; /*#6d88a1;*/
+	border-radius: 8px;
+	font-family: 'Roboto Slab', serif;
+}
+
+.form-inlog p
+{
+	color:#ffffff;
+	margin-bottom:20px;
+}
+
+.form-inlog fieldset{
+	display:block;
+	border: none;
+	max-width: 500px;
+	width: 100%;
+}
+
+.form-inlog label {
+	display: block;
+	margin-bottom: 8px;
+}
+
+.form-inlog legend {
+	font-size: 18px;
+	margin-bottom: 15px;
+	font-weight:bold;
+	color:#ffffff;
+}
+
+.form-inlog input[type="text"],
+.form-inlog input[type="date"],
+.form-inlog input[type="datetime"],
+.form-inlog input[type="email"],
+.form-inlog input[type="number"],
+.form-inlog input[type="search"],
+.form-inlog input[type="time"],
+.form-inlog input[type="url"],
+.form-inlog textarea,
+.form-inlog select, 
+.form-style input[type="text"],
+.form-style input[type="date"],
+.form-style input[type="datetime"],
+.form-style input[type="email"],
+.form-style input[type="number"],
+.form-style input[type="search"],
+.form-style input[type="time"],
+.form-style input[type="url"],
+.form-style textarea,
+.form-style select, 
+main input[type="text"]
+{
+	font-family: 'Roboto Slab', serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 16px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	/*width: 100%;*/
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #f0f0f0;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 15px;
+}
+
+.form-inlog input[type="text"]:focus,
+.form-inlog input[type="date"]:focus,
+.form-inlog input[type="datetime"]:focus,
+.form-inlog input[type="email"]:focus,
+.form-inlog input[type="number"]:focus,
+.form-inlog input[type="search"]:focus,
+.form-inlog input[type="time"]:focus,
+.form-inlog input[type="url"]:focus,
+.form-inlog textarea:focus,
+.form-inlog select:focus,
+main input[type="text"]:focus
+.form-style input[type="text"]:focus,
+.form-style input[type="date"]:focus,
+.form-style input[type="datetime"]:focus,
+.form-style input[type="email"]:focus,
+.form-style input[type="number"]:focus,
+.form-style input[type="search"]:focus,
+.form-style input[type="time"]:focus,
+.form-style input[type="url"]:focus,
+.form-style textarea:focus,
+.form-style select:focus
+{
+	background: #c22126;
+	color:#ffffff;
+}
+
+.form-inlog select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+input:focus::-webkit-input-placeholder {
+    color: #ffffff;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #999;
+}
+input:focus:-moz-placeholder {
+    color: #ffffff;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: #ffffff;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: #ffffff;
+}
+

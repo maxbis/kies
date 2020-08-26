@@ -1,0 +1,23 @@
+#container {
+    flex-direction: row;
+    display:flex;
+}
+#links, #rechts {
+    border: 1px solid black;
+    text-align:center;
+    width:30%;
+    margin: auto 0;
+}
+#midden {
+    height : 300px;
+    width: 40%;
+    margin: auto 0;
+    text-align:center;
+}
+#links, #rechts {
+    font-size:3em;
+}
+#afbeelding {
+    height:300px;
+
+}

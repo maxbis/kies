@@ -1,0 +1,33 @@
+TODO list voor intake opdracht 
+
+Todo: 
+MUST HAVE: 
+vmboer kan hulp vragen aan student
+als vmboer om hulp vraagt gaat er een ster af
+student krijgt te zien dat vmboer hulp nodig heeft
+vmboer krijgt eindscore te zien
+IDU-coordinator ziet overzicht met alle vmboers met hun gehaalde scores voor inzicht in aantal toekomstige studenten
+bij home.php fixen dat alle leerlingen getoond worden in de dropdown
+
+
+
+SHOULD HAVE:
+
+
+COULD HAVE:
+Overzicht per leerling met grafieken over hoeveel sterren ze hebben behaald en in welk level
+alle plain text in een apart php bestandje zetten voor overzicht
+
+WOULD HAVE: 
+
+
+Under review:
+ERD
+
+Gedaan:
+registratie voor vmboers
+inlogsysteem met rollen (vmboer, student, docent, IDU-coordinator)
+overzicht voor docent met hoeveel sterren de vmboer gehaald heeft
+overzicht voor docent om te zien waar een student is 
+code voor vmboers om in te loggen - Werkt, maar moet nog gefixt worden dat je alleen tijdens de begin en eindtijd van de intake kan inloggen
+vmboer sterren geven
