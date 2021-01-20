@@ -4,41 +4,41 @@ if ($_SESSION["rol"] != "docent") {
     session_destroy();
     echo "<script type='text/javascript'>window.location.href = 'index.php';</script>";
 } else {
-    
+
     include "database.php";
     if (isset($_POST["logout"])) {
         session_destroy();
         echo "<script type='text/javascript'>window.location.href = 'index.php';</script>";
-    
+
     }
     if (isset($_POST["terug"])) {
         echo "<script type='text/javascript'>window.location.href = 'menu.php';</script>";
-    
+
     }
     if (isset($_POST["tonen"])) {
         $datum = $_POST["datum"];
         $type = $_POST["type"];
-        $sql = "select * from dagcode 
-                where datum = '$datum' 
+        $sql = "select * from dagcode
+                where datum = '$datum'
                 and type=$type";
         $result = $conn->query($sql);
         $aantalRijen = $result->rowCount();
         if ($aantalRijen ==0) {
             $tekst =  "<p class='dagcode'>Er is nog geen dagcode voor $datum</p>";
-            
+
         } else {
             $row = $result->fetch();
             $tekst =  "<p class='dagcode'>De dagcode voor $datum is : <span id='dagcode'>"
             . $row["dagcode"]. "</span></p>";
-            
-        }  
-    } 
-    if ($_POST["toevoegen"]) {
+
+        }
+    }
+    if (isset($_POST["toevoegen"])) {
         $datum = $_POST["datum"];
         $type = $_POST["type"];
         //controleer eerst of er al een dagcode voor die dag is.
-        $sql = "select * from dagcode 
-                where datum = '$datum' 
+        $sql = "select * from dagcode
+                where datum = '$datum'
                 and type=$type";
         $result = $conn->query($sql);
         $aantalRijen = $result->rowCount();
@@ -57,7 +57,7 @@ if ($_SESSION["rol"] != "docent") {
             $stmt->bindParam(':dagcode', $dagcode);
             $stmt->bindParam(':datum', $datum);
             $stmt->bindParam(':type', $type);
-            
+
             $stmt->execute();
             $tekst =  "<p class='dagcode'>de genereerde dagcode is: <span id='dagcode'>". $dagcode . "</span></p>";
         } else {
