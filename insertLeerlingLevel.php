@@ -12,7 +12,7 @@ $sql = "select * from leerling_level where leerlingId=$leerlingId and levelId = 
 $result = $conn->query($sql);
 $aantalRijen =$result->rowCount();
 if ($aantalRijen == 0) {
-    $sql = "INSERT into leerling_level  (levelId, leerlingId, sterren) values (:level, :leerling, :aantalSterren)";
+    $sql = "INSERT into leerling_level  (levelId, leerlingId, sterren, gereed) values (:level, :leerling, :aantalSterren, 0)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':level', $level);
     $stmt->bindParam(':leerling', $leerlingId);
